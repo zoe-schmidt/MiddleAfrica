@@ -15,6 +15,12 @@ class paisesController extends Controller
 
       $vac=compact($paises);
 
-      return view('/',$vac);
+      return view('/pruebaPaises',$vac);
+    }
+    public function nombrePais(){
+      $paises=Pais::all();
+      foreach ($paises as $pais) {
+        return $pais->nombre;
+      }
     }
 }

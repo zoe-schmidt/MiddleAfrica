@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'pruebaController@listado');
+Route::get('/pruebaPaises',function(){});
 
-Route::get('/', 'paisesController@listadoPaises');
+Route::get('/prueba', function () {});
+
+  Route::get('/pruebaPaises', 'paisesController@listadoPaises');
+
+  Route::get('/pruebaPaises', 'paisesController@nombrePais');
